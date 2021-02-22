@@ -9,17 +9,19 @@
   "scripts": {
     "build": "npm run build:ts & npm run build:files",
     "build:files": "rollup -c",
-    "build:ts": "tsc -d --declarationDir dist --declarationMap --emitDeclarationOnly",
+    "build:ts": "npx tsc -d --declarationDir dist --declarationMap --emitDeclarationOnly",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "library"
   ],
-  "author": "Gabriel Zapata <?> (https://gabojkz.github.io)",
+  "author": "Gabriel Zapata <gabrielux@gmx.com> (https://gabojkz.github.io)",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.12.17",
     "@babel/core": "^7.12.17",
+    "@babel/plugin-external-helpers": "^7.12.13",
+    "@babel/plugin-transform-runtime": "^7.12.17",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.12.17",
     "@rollup/plugin-babel": "^5.3.0",

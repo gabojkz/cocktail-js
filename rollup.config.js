@@ -24,7 +24,6 @@ export default [
       exclude: 'node_modules/**',
       babelHelpers: 'bundled'
     }),
-    terser()
   ]),
   /** ESM modules */
   config({
@@ -37,7 +36,6 @@ export default [
       exclude: 'node_modules/**',
       babelHelpers: 'bundled'
     }),
-    terser()
   ]),
   /** Browser CDN */
   config({
@@ -55,9 +53,10 @@ export default [
     commonjs(),
     babel({
       exclude: 'node_modules/**',
-      babelHelpers: 'bundled',
+      babelHelpers: 'runtime',
       babelrc: false,
-      presets: [["@babel/preset-env"]]
+      presets: [["@babel/preset-env"]],
+      plugins: ["@babel/plugin-transform-runtime"],
     }),
     terser()
   ])

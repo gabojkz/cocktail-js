@@ -1,5 +1,4 @@
 import API from "./api";
-import "@babel/polyfill";
 
 /**
  * @class Cocktail
