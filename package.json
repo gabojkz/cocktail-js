@@ -1,5 +1,5 @@
 {
-  "name": "cocktail",
+  "name": "rollup-cocktail",
   "version": "1.0.0",
   "description": "js client library with made with rollup.js",
   "main": "dist/cocktail.cjs.js",
@@ -15,7 +15,7 @@
   "keywords": [
     "library"
   ],
-  "author": "",
+  "author": "Gabriel Zapata <?> (https://gabojkz.github.io)",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.12.17",

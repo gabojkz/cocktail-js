@@ -1,8 +1,13 @@
-export default Cocktail;
 /**
- * Cocktail class
+ * @class Cocktail
  */
-declare class Cocktail {
-    getDrink(name: any): Promise<any>;
+export default class Cocktail {
+    /**
+     * get a drink
+     * @method getDrink
+     * @param {string} name
+     * @returns {Promise} - drink full description, recipe, ingridients
+     */
+    getDrink(name: string): Promise<any>;
 }
 //# sourceMappingURL=index.d.ts.map
