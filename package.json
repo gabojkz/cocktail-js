@@ -1,6 +1,6 @@
 {
   "name": "rollup-cocktail",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "js client library with made with rollup.js",
   "main": "dist/cocktail.cjs.js",
   "browser": "dist/cocktail.min.js",
