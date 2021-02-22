@@ -1,0 +1,1 @@
+"use strict";var t=require("node-fetch");function e(t){return t&&"object"==typeof t&&"default"in t?t:{default:t}}require("@babel/polyfill");var r=e(t);module.exports=class{constructor(){}async getDrink(t){if(!t)return null;return(await(await async function(t){return r.default("https://www.thecocktaildb.com/api/json/v1/1/"+t)}(`search.php?s=${t}`)).json()).drinks||null}};
